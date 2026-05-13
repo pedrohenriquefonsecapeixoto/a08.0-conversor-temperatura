@@ -30,5 +30,5 @@ main = do
           putStrLn "Entrada Inválida!"
         else do
           let (f, k) = fromJust maybeTemps
-          putStrLn (printf "Temperatura em Fahrenheit: %.2f\n" f)
-          putStrLn (printf "Temperatura em Kelvin: %.2f\n" k)
+          putStrLn (printf "Temperatura em Fahrenheit: %.2f" f)
+          putStrLn (printf "Temperatura em Kelvin: %.2f" k)
