@@ -27,7 +27,7 @@ main = do
       let maybeTemps = converteTemperatura celsius
       if isNothing maybeTemps
         then 
-          putStrLn "Entrada Inválida!"
+          putStrLn "Entrada inválida!"
         else do
           let (f, k) = fromJust maybeTemps
           putStrLn (printf "Temperatura em Fahrenheit: %.2f" f)
