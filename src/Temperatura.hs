@@ -21,15 +21,14 @@ main = do
   let maybeCelsius = readMaybe entrada :: Maybe Double
   if isNothing maybeCelsius
     then 
-      putStrLn "Entrada inválida."
+      putStrLn "Entrada inválida!"
     else do
       let celsius = fromJust maybeCelsius
       let maybeTemps = converteTemperatura celsius
       if isNothing maybeTemps
         then 
-          putStrLn "Entrada Inválida."
+          putStrLn "Entrada Inválida!"
         else do
           let (f, k) = fromJust maybeTemps
-          printf "Temperatura em Fahrenheit: %.2f\n" f
-          printf "Temperatura em Kelvin: %.2f\n" k
-          
+          putStrLn (printf "Temperatura em Fahrenheit: %.2f\n" f)
+          putStrLn (printf "Temperatura em Kelvin: %.2f\n" k)
