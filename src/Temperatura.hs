@@ -32,3 +32,4 @@ main = do
           let (f, k) = fromJust maybeTemps
           printf "Temperatura em Fahrenheit: %.2f\n" f
           printf "Temperatura em Kelvin: %.2f\n" k
+          
